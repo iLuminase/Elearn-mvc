@@ -1,0 +1,94 @@
+@model EbookMVC.Models.Product
+
+@{
+    ViewData["Title"] = "Chi tiết khóa học";
+}
+
+<!-- Content Header (Page header) -->
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0">@ViewData["Title"]</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item"><a asp-action="Index">Quản lý khóa học</a></li>
+                    <li class="breadcrumb-item active">Chi tiết</li>
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Thông tin khóa học: @Model.Name</h3>
+                        <div class="card-tools">
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <button type="button" class="btn btn-tool" data-card-widget="remove">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <dl class="row">
+                                    <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Name)</dt>
+                                    <dd class="col-sm-9">@Html.DisplayFor(model => model.Name)</dd>
+
+                                    <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Price)</dt>
+                                    <dd class="col-sm-9">@Model.Price.ToString("N0") VNĐ</dd>
+
+                                    <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Description)</dt>
+                                    <dd class="col-sm-9">@Html.DisplayFor(model => model.Description)</dd>
+
+                                    <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Category)</dt>
+                                    <dd class="col-sm-9">@Html.DisplayFor(model => model.Category.Name)</dd>
+
+                                    <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Duration)</dt>
+                                    <dd class="col-sm-9">@Html.DisplayFor(model => model.Duration) giờ</dd>
+
+                                    <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Level)</dt>
+                                    <dd class="col-sm-9">@Html.DisplayFor(model => model.Level)</dd>
+                                </dl>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header bg-primary">
+                                        <h3 class="card-title">Thao tác</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning btn-block">
+                                            <i class="fas fa-edit"></i> Chỉnh sửa
+                                        </a>
+                                        <a asp-action="Index" class="btn btn-secondary btn-block">
+                                            <i class="fas fa-arrow-left"></i> Quay lại danh sách
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+</section>
+<!-- /.content -->

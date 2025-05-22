@@ -1,0 +1,106 @@
+@model EbookMVC.Models.Product
+
+@{
+    ViewData["Title"] = "Thêm khóa học mới";
+}
+
+<!-- Content Header (Page header) -->
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0">@ViewData["Title"]</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item"><a asp-action="Index">Quản lý khóa học</a></li>
+                    <li class="breadcrumb-item active">Thêm mới</li>
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Thông tin khóa học</h3>
+                        <div class="card-tools">
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <button type="button" class="btn btn-tool" data-card-widget="remove">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <form asp-action="Create">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="form-group">
+                                <label asp-for="Name" class="control-label"></label>
+                                <input asp-for="Name" class="form-control" />
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Price" class="control-label"></label>
+                                <input asp-for="Price" class="form-control" />
+                                <span asp-validation-for="Price" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Description" class="control-label"></label>
+                                <textarea asp-for="Description" class="form-control" rows="4"></textarea>
+                                <span asp-validation-for="Description" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="CategoryId" class="control-label"></label>
+                                <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.Categories"></select>
+                                <span asp-validation-for="CategoryId" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Duration" class="control-label"></label>
+                                <input asp-for="Duration" class="form-control" />
+                                <span asp-validation-for="Duration" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Level" class="control-label"></label>
+                                <select asp-for="Level" class="form-control">
+                                    <option value="Cơ bản">Cơ bản</option>
+                                    <option value="Trung cấp">Trung cấp</option>
+                                    <option value="Nâng cao">Nâng cao</option>
+                                    <option value="Cơ bản đến nâng cao">Cơ bản đến nâng cao</option>
+                                </select>
+                                <span asp-validation-for="Level" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-save"></i> Lưu
+                                </button>
+                                <a asp-action="Index" class="btn btn-secondary">
+                                    <i class="fas fa-arrow-left"></i> Quay lại
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+</section>
+<!-- /.content -->
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,348 @@
+﻿@model EbookMVC.Models.DashboardViewModel
+
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<!-- Content Header (Page header) -->
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0">Dashboard</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item active">Dashboard</li>
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <!-- Info boxes -->
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="info-box">
+                    <span class="info-box-icon bg-info elevation-1"><i class="fas fa-book"></i></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">Khóa học</span>
+                        <span class="info-box-number">@Model.TotalProducts</span>
+                    </div>
+                    <!-- /.info-box-content -->
+                </div>
+                <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="info-box mb-3">
+                    <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-list"></i></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">Danh mục</span>
+                        <span class="info-box-number">@Model.TotalCategories</span>
+                    </div>
+                    <!-- /.info-box-content -->
+                </div>
+                <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+
+            <!-- fix for small devices only -->
+            <div class="clearfix hidden-md-up"></div>
+
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="info-box mb-3">
+                    <span class="info-box-icon bg-success elevation-1"><i class="fas fa-money-bill"></i></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">Doanh thu</span>
+                        <span class="info-box-number">@Model.TotalRevenue.ToString("N0") VNĐ</span>
+                    </div>
+                    <!-- /.info-box-content -->
+                </div>
+                <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="info-box mb-3">
+                    <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-users"></i></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">Người dùng</span>
+                        <span class="info-box-number">@Model.TotalUsers</span>
+                    </div>
+                    <!-- /.info-box-content -->
+                </div>
+                <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-md-6">
+                <!-- DONUT CHART -->
+                <div class="card card-danger">
+                    <div class="card-header">
+                        <h3 class="card-title">Khóa học theo danh mục</h3>
+                        <div class="card-tools">
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <button type="button" class="btn btn-tool" data-card-widget="remove">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="donutChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col (LEFT) -->
+            <div class="col-md-6">
+                <!-- BAR CHART -->
+                <div class="card card-success">
+                    <div class="card-header">
+                        <h3 class="card-title">Thống kê hoạt động</h3>
+                        <div class="card-tools">
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <button type="button" class="btn btn-tool" data-card-widget="remove">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="barChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col (RIGHT) -->
+        </div>
+        <!-- /.row -->
+
+        <!-- Recent Activities -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Hoạt động gần đây</h3>
+                        <div class="card-tools">
+                            <a href="/Home/UserLogs" class="btn btn-tool">
+                                <i class="fas fa-list"></i> Xem tất cả
+                            </a>
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <button type="button" class="btn btn-tool" data-card-widget="remove">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body p-0">
+                        <div class="table-responsive">
+                            <table class="table m-0">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Hành động</th>
+                                        <th>Đối tượng</th>
+                                        <th>Mô tả</th>
+                                        <th>Người dùng</th>
+                                        <th>Thời gian</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var log in Model.RecentActivities)
+                                    {
+                                        <tr>
+                                            <td>@log.Id</td>
+                                            <td>
+                                                @if (log.Action == "CREATE")
+                                                {
+                                                    <span class="badge bg-success">Tạo mới</span>
+                                                }
+                                                else if (log.Action == "UPDATE")
+                                                {
+                                                    <span class="badge bg-warning">Cập nhật</span>
+                                                }
+                                                else if (log.Action == "DELETE")
+                                                {
+                                                    <span class="badge bg-danger">Xóa</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="badge bg-info">@log.Action</span>
+                                                }
+                                            </td>
+                                            <td>@log.EntityName</td>
+                                            <td>@log.Description</td>
+                                            <td>@log.UserName</td>
+                                            <td>@log.Timestamp.ToString("dd/MM/yyyy HH:mm")</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.table-responsive -->
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+</section>
+<!-- /.content -->
+
+@section Scripts {
+    <!-- ChartJS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Dữ liệu cho biểu đồ tròn (Khóa học theo danh mục)
+        var donutChartCanvas = document.getElementById('donutChart').getContext('2d');
+        var donutData = {
+            labels: [
+                @foreach (var item in Model.ProductsByCategory)
+                {
+                    <text>'@Html.Raw(item.Key)', </text>
+                }
+            ],
+            datasets: [
+                {
+                    data: [
+                        @foreach (var item in Model.ProductsByCategory)
+                        {
+                            <text>@item.Value, </text>
+                        }
+                    ],
+                    backgroundColor: ['#f56954', '#00a65a', '#f39c12', '#00c0ef', '#3c8dbc', '#d2d6de'],
+                }
+            ]
+        };
+        var donutOptions = {
+            maintainAspectRatio: false,
+            responsive: true,
+            plugins: {
+                legend: {
+                    labels: {
+                        color: '#000', // Màu đen cho văn bản
+                        font: {
+                            size: 12,
+                            weight: 'bold'
+                        }
+                    },
+                    position: 'right'
+                },
+                tooltip: {
+                    bodyFont: {
+                        size: 14
+                    },
+                    titleFont: {
+                        size: 16
+                    }
+                }
+            }
+        };
+        new Chart(donutChartCanvas, {
+            type: 'doughnut',
+            data: donutData,
+            options: donutOptions
+        });
+
+        // Dữ liệu cho biểu đồ cột (Thống kê hoạt động)
+        var barChartCanvas = document.getElementById('barChart').getContext('2d');
+        var barData = {
+            labels: [
+                @foreach (var item in Model.ActionCounts)
+                {
+                    <text>'@Html.Raw(item.Key)', </text>
+                }
+            ],
+            datasets: [
+                {
+                    label: 'Số lượng',
+                    backgroundColor: 'rgba(60,141,188,0.9)',
+                    borderColor: 'rgba(60,141,188,0.8)',
+                    pointRadius: false,
+                    pointColor: '#3b8bba',
+                    pointStrokeColor: 'rgba(60,141,188,1)',
+                    pointHighlightFill: '#fff',
+                    pointHighlightStroke: 'rgba(60,141,188,1)',
+                    data: [
+                        @foreach (var item in Model.ActionCounts)
+                        {
+                            <text>@item.Value, </text>
+                        }
+                    ]
+                }
+            ]
+        };
+        var barOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        color: '#000', // Màu đen cho văn bản
+                        font: {
+                            weight: 'bold'
+                        }
+                    },
+                    grid: {
+                        color: 'rgba(0, 0, 0, 0.1)'
+                    }
+                },
+                x: {
+                    ticks: {
+                        color: '#000', // Màu đen cho văn bản
+                        font: {
+                            weight: 'bold'
+                        }
+                    },
+                    grid: {
+                        color: 'rgba(0, 0, 0, 0.1)'
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                    labels: {
+                        color: '#000', // Màu đen cho văn bản
+                        font: {
+                            size: 12,
+                            weight: 'bold'
+                        }
+                    }
+                },
+                tooltip: {
+                    bodyFont: {
+                        size: 14
+                    },
+                    titleFont: {
+                        size: 16
+                    }
+                }
+            }
+        };
+        new Chart(barChartCanvas, {
+            type: 'bar',
+            data: barData,
+            options: barOptions
+        });
+    </script>
+}

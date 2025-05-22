@@ -1,0 +1,329 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\EbookMVC.bundle.scp.css",
+      "PackagePath": "staticwebassets\\EbookMVC.4c2zvdg65d.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\css\\adminlte.css",
+      "PackagePath": "staticwebassets\\css\\adminlte.css"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\css\\adminlte.css.map",
+      "PackagePath": "staticwebassets\\css\\adminlte.css.map"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\css\\adminlte.min.css",
+      "PackagePath": "staticwebassets\\css\\adminlte.min.css"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\css\\adminlte.min.css.map",
+      "PackagePath": "staticwebassets\\css\\adminlte.min.css.map"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\css\\adminlte.rtl.css",
+      "PackagePath": "staticwebassets\\css\\adminlte.rtl.css"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\css\\adminlte.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\adminlte.rtl.css.map"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\css\\adminlte.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\adminlte.rtl.min.css"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\css\\adminlte.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\adminlte.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\js\\adminlte.js",
+      "PackagePath": "staticwebassets\\js\\adminlte.js"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\js\\adminlte.js.map",
+      "PackagePath": "staticwebassets\\js\\adminlte.js.map"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\js\\adminlte.min.js",
+      "PackagePath": "staticwebassets\\js\\adminlte.min.js"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\js\\adminlte.min.js.map",
+      "PackagePath": "staticwebassets\\js\\adminlte.min.js.map"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.EbookMVC.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.EbookMVC.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.EbookMVC.props",
+      "PackagePath": "build\\EbookMVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.EbookMVC.props",
+      "PackagePath": "buildMultiTargeting\\EbookMVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.EbookMVC.props",
+      "PackagePath": "buildTransitive\\EbookMVC.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
