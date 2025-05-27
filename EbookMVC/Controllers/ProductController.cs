@@ -3,6 +3,9 @@ using EbookMVC.Models;
 using EbookMVC.Repository;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
+using System.Threading.Tasks;
+using System.IO;
+using Microsoft.AspNetCore.Http;
 
 namespace EbookMVC.Controllers
 {
@@ -23,159 +26,285 @@ namespace EbookMVC.Controllers
         }
 
         // GET: Product
-        public IActionResult Index()
+        // Hiển thị danh sách sản phẩm với tìm kiếm
+        public async Task<IActionResult> Index(string searchName, decimal? minPrice, decimal? maxPrice, int? categoryId)
         {
-            var products = _productRepository.GetAll();
-            // Populate Category property for each product
-            foreach (var product in products)
-            {
-                product.Category = _categoryRepository.GetById(product.CategoryId);
-            }
-            return View(products);
+            // Lấy danh sách danh mục để hiển thị trong dropdown
+            var categories = await Task.Run(() => _categoryRepository.GetAll());
+            ViewBag.Categories = new SelectList(categories, "Id", "Name");
+
+            // Sử dụng phương thức Search từ repository để tìm kiếm theo nhiều tiêu chí
+            var products = _productRepository.Search(searchName, categoryId, minPrice, maxPrice, null, null, null);
+
+            return View(products.ToList());
         }
-
-        // GET: Product/Details/5
-        public IActionResult Details(int id)
+        // Hiển thị form thêm sản phẩm mới
+        public async Task<IActionResult> Create()
         {
-            var product = _productRepository.GetById(id);
-            if (product == null)
-            {
-                TempData["ErrorMessage"] = "Không tìm thấy khóa học!";
-                return RedirectToAction(nameof(Index));
-            }
-
-            product.Category = _categoryRepository.GetById(product.CategoryId);
-            return View(product);
-        }
-
-        // GET: Product/Create
-        public IActionResult Create()
-        {
-            ViewBag.Categories = new SelectList(_categoryRepository.GetAll(), "Id", "Name");
+            var categories = await Task.Run(() => _categoryRepository.GetAll());
+            ViewBag.Categories = new SelectList(categories, "Id", "Name");
             return View();
         }
-
-        // POST: Product/Create
+        // Xử lý thêm sản phẩm mới
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(Product product)
+        public async Task<IActionResult> Create(Product product, IFormFile imageUrl)
         {
+            // Loại bỏ xác thực ModelState cho ImageUrl và Category vì chúng không cần thiết
+            ModelState.Remove("ImageUrl");
+            ModelState.Remove("Category");
+
             if (ModelState.IsValid)
             {
-                _productRepository.Add(product);
-
-                // Ghi log
-                _userLogRepository.Add(new UserLog
+                try
                 {
-                    Action = "CREATE",
-                    EntityName = "Product",
-                    EntityId = product.Id,
-                    Description = $"Tạo khóa học mới: {product.Name}",
-                    IpAddress = HttpContext.Connection.RemoteIpAddress?.ToString() ?? "127.0.0.1",
-                    UserName = "Admin",
-                    Timestamp = DateTime.Now
-                });
+                    if (imageUrl != null)
+                    {
+                        product.ImageUrl = await SaveImage(imageUrl);
+                    }
 
-                // Thêm thông báo thành công
-                TempData["SuccessMessage"] = "Thêm khóa học thành công!";
-                return RedirectToAction(nameof(Index));
+                    // Lưu sản phẩm vào database
+                    _productRepository.Add(product);
+
+                    // Ghi log hoạt động
+                    _userLogRepository.Add(new UserLog
+                    {
+                        Action = "CREATE",
+                        EntityName = "Product",
+                        EntityId = product.Id,
+                        Description = $"Tạo khóa học mới: {product.Name}",
+                        IpAddress = HttpContext.Connection.RemoteIpAddress?.ToString() ?? "127.0.0.1",
+                        UserName = "Admin",
+                        Timestamp = DateTime.Now
+                    });
+
+                    // Thêm thông báo thành công
+                    TempData["SuccessMessage"] = "Thêm khóa học thành công!";
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (Exception ex)
+                {
+                    // Thêm thông báo lỗi
+                    TempData["ErrorMessage"] = $"Có lỗi xảy ra khi lưu khóa học: {ex.Message}";
+                }
             }
-            ViewBag.Categories = new SelectList(_categoryRepository.GetAll(), "Id", "Name", product.CategoryId);
+
+            // Nếu ModelState không hợp lệ hoặc có lỗi, hiển thị form với dữ liệu đã nhập
+            var categories = _categoryRepository.GetAll();
+            ViewBag.Categories = new SelectList(categories, "Id", "Name", product.CategoryId);
             return View(product);
         }
-
-        // GET: Product/Edit/5
-        public IActionResult Edit(int id)
+        // Viết thêm hàm SaveImage (tham khảo bài 02)
+        private async Task<string> SaveImage(IFormFile image)
         {
-            var product = _productRepository.GetById(id);
+            if (image == null || image.Length == 0)
+                return string.Empty;
+
+            // Tạo tên file unique để tránh trùng lặp
+            var fileName = Guid.NewGuid().ToString() + Path.GetExtension(image.FileName);
+            var uploadsFolder = Path.Combine("wwwroot", "images");
+
+            // Tạo thư mục nếu chưa tồn tại
+            if (!Directory.Exists(uploadsFolder))
+            {
+                Directory.CreateDirectory(uploadsFolder);
+            }
+
+            var filePath = Path.Combine(uploadsFolder, fileName);
+
+            using (var fileStream = new FileStream(filePath, FileMode.Create))
+            {
+                await image.CopyToAsync(fileStream);
+            }
+
+            return "/images/" + fileName; // Trả về đường dẫn tương đối
+        }
+
+
+        // Hiển thị thông tin chi tiết sản phẩm
+        public async Task<IActionResult> Details(int id)
+        {
+            var product = await Task.Run(() => _productRepository.GetById(id));
             if (product == null)
             {
-                TempData["ErrorMessage"] = "Không tìm thấy khóa học!";
-                return RedirectToAction(nameof(Index));
+                return NotFound();
             }
-            ViewBag.Categories = new SelectList(_categoryRepository.GetAll(), "Id", "Name", product.CategoryId);
             return View(product);
         }
-
-        // POST: Product/Edit/5
+        // Hiển thị form cập nhật sản phẩm
+        public async Task<IActionResult> Edit(int id)
+        {
+            var product = await Task.Run(() => _productRepository.GetById(id));
+            if (product == null)
+            {
+                return NotFound();
+            }
+            var categories = await Task.Run(() => _categoryRepository.GetAll());
+            ViewBag.Categories = new SelectList(categories, "Id", "Name", product.CategoryId);
+            return View(product);
+        }
+        // Xử lý cập nhật sản phẩm
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, Product product)
+        public async Task<IActionResult> Edit(int id, Product product, IFormFile imageUrl)
         {
+            // Loại bỏ xác thực ModelState cho ImageUrl và Category vì chúng không cần thiết
+            ModelState.Remove("ImageUrl");
+            ModelState.Remove("Category");
+
             if (id != product.Id)
             {
-                TempData["ErrorMessage"] = "ID khóa học không hợp lệ!";
-                return RedirectToAction(nameof(Index));
+                return NotFound();
             }
 
             if (ModelState.IsValid)
             {
-                _productRepository.Update(product);
-
-                // Ghi log
-                _userLogRepository.Add(new UserLog
+                try
                 {
-                    Action = "UPDATE",
-                    EntityName = "Product",
-                    EntityId = product.Id,
-                    Description = $"Cập nhật khóa học: {product.Name}",
-                    IpAddress = HttpContext.Connection.RemoteIpAddress?.ToString() ?? "127.0.0.1",
-                    UserName = "Admin",
-                    Timestamp = DateTime.Now
-                });
+                    var existingProduct = _productRepository.GetById(id);
+                    if (existingProduct == null)
+                    {
+                        return NotFound();
+                    }
 
-                // Thêm thông báo thành công
-                TempData["SuccessMessage"] = "Cập nhật khóa học thành công!";
-                return RedirectToAction(nameof(Index));
+                    // Giữ nguyên thông tin hình ảnh nếu không có hình mới được tải lên
+                    if (imageUrl == null || imageUrl.Length == 0)
+                    {
+                        product.ImageUrl = existingProduct.ImageUrl;
+                    }
+                    else
+                    {
+                        // Lưu hình ảnh mới
+                        product.ImageUrl = await SaveImage(imageUrl);
+                    }
+
+                    // Cập nhật các thông tin khác của sản phẩm
+                    existingProduct.Name = product.Name;
+                    existingProduct.Price = product.Price;
+                    existingProduct.Description = product.Description;
+                    existingProduct.CategoryId = product.CategoryId;
+                    existingProduct.ImageUrl = product.ImageUrl;
+                    existingProduct.Duration = product.Duration;
+                    existingProduct.Level = product.Level;
+
+                    // Lưu vào database
+                    _productRepository.Update(existingProduct);
+
+                    // Ghi log hoạt động
+                    _userLogRepository.Add(new UserLog
+                    {
+                        Action = "UPDATE",
+                        EntityName = "Product",
+                        EntityId = existingProduct.Id,
+                        Description = $"Cập nhật khóa học: {existingProduct.Name}",
+                        IpAddress = HttpContext.Connection.RemoteIpAddress?.ToString() ?? "127.0.0.1",
+                        UserName = "Admin",
+                        Timestamp = DateTime.Now
+                    });
+
+                    // Thêm thông báo thành công
+                    TempData["SuccessMessage"] = "Cập nhật khóa học thành công!";
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (Exception ex)
+                {
+                    // Thêm thông báo lỗi
+                    TempData["ErrorMessage"] = $"Có lỗi xảy ra khi cập nhật khóa học: {ex.Message}";
+                }
             }
-            ViewBag.Categories = new SelectList(_categoryRepository.GetAll(), "Id", "Name", product.CategoryId);
+
+            // Nếu ModelState không hợp lệ hoặc có lỗi, hiển thị form với dữ liệu đã nhập
+            var categories = _categoryRepository.GetAll();
+            ViewBag.Categories = new SelectList(categories, "Id", "Name", product.CategoryId);
             return View(product);
         }
-
-        // GET: Product/Delete/5
-        public IActionResult Delete(int id)
+        // Hiển thị form xác nhận xóa sản phẩm
+        public async Task<IActionResult> Delete(int id)
         {
-            var product = _productRepository.GetById(id);
+            var product = await Task.Run(() => _productRepository.GetById(id));
             if (product == null)
             {
-                TempData["ErrorMessage"] = "Không tìm thấy khóa học!";
-                return RedirectToAction(nameof(Index));
+                return NotFound();
             }
-
-            product.Category = _categoryRepository.GetById(product.CategoryId);
             return View(product);
         }
-
-        // POST: Product/Delete/5
+        // Xử lý xóa sản phẩm
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public IActionResult DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var product = _productRepository.GetById(id);
-            if (product == null)
+            await Task.Run(() => _productRepository.Delete(id));
+            return RedirectToAction(nameof(Index));
+        }
+
+        // GET: Product/Search với tham số từ URL
+        [HttpGet]
+        public IActionResult Search(string keyword)
+        {
+            var viewModel = new ProductSearchViewModel
             {
-                TempData["ErrorMessage"] = "Không tìm thấy khóa học!";
-                return RedirectToAction(nameof(Index));
+                Keyword = keyword,
+                Categories = new SelectList(_categoryRepository.GetAll(), "Id", "Name"),
+                Levels = new SelectList(new[] { "Cơ bản", "Trung cấp", "Nâng cao", "Cơ bản đến nâng cao" }),
+                IsSearched = !string.IsNullOrEmpty(keyword)
+            };
+
+            if (viewModel.IsSearched)
+            {
+                viewModel.Products = _productRepository.Search(keyword);
+            }
+            else
+            {
+                viewModel.Products = new List<Product>();
             }
 
-            string productName = product.Name;
-            _productRepository.Delete(id);
+            return View(viewModel);
+        }
 
-            // Ghi log
-            _userLogRepository.Add(new UserLog
+        // POST: Product/Search
+        [HttpPost]
+        public IActionResult Search(ProductSearchViewModel model)
+        {
+            // Thực hiện tìm kiếm
+            var products = _productRepository.Search(
+                model.Keyword,
+                model.CategoryId,
+                model.MinPrice,
+                model.MaxPrice,
+                null, // minDuration
+                null, // maxDuration
+                model.Level
+            );
+
+            // Cập nhật model
+            model.Products = products;
+            model.Categories = new SelectList(_categoryRepository.GetAll(), "Id", "Name", model.CategoryId);
+            model.Levels = new SelectList(new[] { "Cơ bản", "Trung cấp", "Nâng cao", "Cơ bản đến nâng cao" }, model.Level);
+            model.IsSearched = true;
+
+            return View(model);
+        }
+        // API endpoint cho tìm kiếm real-time
+        [HttpGet]
+        public IActionResult SearchApi(string keyword)
+        {
+            if (string.IsNullOrEmpty(keyword))
             {
-                Action = "DELETE",
-                EntityName = "Product",
-                EntityId = id,
-                Description = $"Xóa khóa học: {productName}",
-                IpAddress = HttpContext.Connection.RemoteIpAddress?.ToString() ?? "127.0.0.1",
-                UserName = "Admin",
-                Timestamp = DateTime.Now
-            });
+                return Json(new { success = false, data = new List<object>() });
+            }
 
-            // Thêm thông báo thành công
-            TempData["SuccessMessage"] = "Xóa khóa học thành công!";
-            return RedirectToAction(nameof(Index));
+            var products = _productRepository.Search(keyword);
+            var result = products.Select(p => new
+            {
+                id = p.Id,
+                name = p.Name,
+                price = p.Price.ToString("N0") + " VNĐ",
+                categoryName = p.Category?.Name ?? "Chưa phân loại",
+                imageUrl = p.ImageUrl ?? "",
+                level = p.Level ?? ""
+            }).ToList();
+
+            return Json(new { success = true, data = result });
         }
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cH8dG2XKrZJrOWw1NbLRGfAxPQvYLLrFHboS8wg3kn8=",
+  "Hash": "u49JnNQ5OOPt5do6LHzhCmgUqL4TUKDUC1byz4AJLqo=",
   "Source": "EbookMVC",
   "BasePath": "_content/EbookMVC",
   "Mode": "Default",
@@ -834,6 +834,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Identity": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\obj\\Debug\\net9.0\\compressed\\hk6pvz9441-1akg5apia3.gz",
+      "SourceId": "EbookMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/EbookMVC",
+      "RelativePath": "js/product-search#[.{fingerprint=1akg5apia3}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\js\\product-search.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "0t13xvspph",
+      "Integrity": "5MhQK058JKNi5r1J/Hw7a0KifaN+xE5pzyJktW9YZpM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\js\\product-search.js"
     },
     {
       "Identity": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\obj\\Debug\\net9.0\\compressed\\ia105oz32a-4c2zvdg65d.gz",
@@ -1865,6 +1886,258 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\37517548-ce8e-495a-88d5-25da9074bce3.jpg",
+      "SourceId": "EbookMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\",
+      "BasePath": "_content/EbookMVC",
+      "RelativePath": "images/37517548-ce8e-495a-88d5-25da9074bce3#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wvspwii8u3",
+      "Integrity": "fCYh77i6zEhByt9NdGkMxgWzIHY5x7JSc3SVtrrITKI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\37517548-ce8e-495a-88d5-25da9074bce3.jpg"
+    },
+    {
+      "Identity": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\7a34b2be-be14-4ca8-982f-d0e654c949a1.png",
+      "SourceId": "EbookMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\",
+      "BasePath": "_content/EbookMVC",
+      "RelativePath": "images/7a34b2be-be14-4ca8-982f-d0e654c949a1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "13tveakxe7",
+      "Integrity": "A6VqJalfg/O8zIWyoQPP8n2U78qvoMnrmWFSaUVZbrs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\7a34b2be-be14-4ca8-982f-d0e654c949a1.png"
+    },
+    {
+      "Identity": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\7de1d075-070b-44bd-8103-d2696083d4f0.jpeg",
+      "SourceId": "EbookMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\",
+      "BasePath": "_content/EbookMVC",
+      "RelativePath": "images/7de1d075-070b-44bd-8103-d2696083d4f0#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hhy15j6lqg",
+      "Integrity": "1VUbYum8q+tU0d+Viic6lLbq0tFP5ZZRjX9bH3tgbYc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\7de1d075-070b-44bd-8103-d2696083d4f0.jpeg"
+    },
+    {
+      "Identity": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\856b5de5-59c7-43ce-b272-bb6bf70670fd.png",
+      "SourceId": "EbookMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\",
+      "BasePath": "_content/EbookMVC",
+      "RelativePath": "images/856b5de5-59c7-43ce-b272-bb6bf70670fd#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m0egxjzla3",
+      "Integrity": "9gd0konMC1sw0h+xSTbA6X9En8ER2XgHpDfkxr8IhkI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\856b5de5-59c7-43ce-b272-bb6bf70670fd.png"
+    },
+    {
+      "Identity": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\9c6bcc70-43e3-417b-9ee2-0b359cd0cd3b.png",
+      "SourceId": "EbookMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\",
+      "BasePath": "_content/EbookMVC",
+      "RelativePath": "images/9c6bcc70-43e3-417b-9ee2-0b359cd0cd3b#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ngc6gs2bj4",
+      "Integrity": "aZv5ccL9TVbzgDh0KPlF1p67FAb964TQa7p7XVthLl8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\9c6bcc70-43e3-417b-9ee2-0b359cd0cd3b.png"
+    },
+    {
+      "Identity": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\azure-chungchi.png",
+      "SourceId": "EbookMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\",
+      "BasePath": "_content/EbookMVC",
+      "RelativePath": "images/azure-chungchi#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m0egxjzla3",
+      "Integrity": "9gd0konMC1sw0h+xSTbA6X9En8ER2XgHpDfkxr8IhkI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\azure-chungchi.png"
+    },
+    {
+      "Identity": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\c++-basic.png",
+      "SourceId": "EbookMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\",
+      "BasePath": "_content/EbookMVC",
+      "RelativePath": "images/c++-basic#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ngc6gs2bj4",
+      "Integrity": "aZv5ccL9TVbzgDh0KPlF1p67FAb964TQa7p7XVthLl8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\c++-basic.png"
+    },
+    {
+      "Identity": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\c54ec0bb-9fc7-4e77-b56f-1afb4bc05bdb.png",
+      "SourceId": "EbookMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\",
+      "BasePath": "_content/EbookMVC",
+      "RelativePath": "images/c54ec0bb-9fc7-4e77-b56f-1afb4bc05bdb#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "23e0o8kat5",
+      "Integrity": "Tj+5kbPXNJJwRL9TRadXEUM2aqri4uU5G76rdkt/z/8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\c54ec0bb-9fc7-4e77-b56f-1afb4bc05bdb.png"
+    },
+    {
+      "Identity": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\d812b570-3514-493c-bb4f-1f894c5ca4d4.jpeg",
+      "SourceId": "EbookMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\",
+      "BasePath": "_content/EbookMVC",
+      "RelativePath": "images/d812b570-3514-493c-bb4f-1f894c5ca4d4#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hhy15j6lqg",
+      "Integrity": "1VUbYum8q+tU0d+Viic6lLbq0tFP5ZZRjX9bH3tgbYc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\d812b570-3514-493c-bb4f-1f894c5ca4d4.jpeg"
+    },
+    {
+      "Identity": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\f1a9b814-9400-421b-ac34-7fce3b6bb888.jpg",
+      "SourceId": "EbookMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\",
+      "BasePath": "_content/EbookMVC",
+      "RelativePath": "images/f1a9b814-9400-421b-ac34-7fce3b6bb888#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wvspwii8u3",
+      "Integrity": "fCYh77i6zEhByt9NdGkMxgWzIHY5x7JSc3SVtrrITKI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\f1a9b814-9400-421b-ac34-7fce3b6bb888.jpg"
+    },
+    {
+      "Identity": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\html-course.jpg",
+      "SourceId": "EbookMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\",
+      "BasePath": "_content/EbookMVC",
+      "RelativePath": "images/html-course#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wvspwii8u3",
+      "Integrity": "fCYh77i6zEhByt9NdGkMxgWzIHY5x7JSc3SVtrrITKI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\html-course.jpg"
+    },
+    {
+      "Identity": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\java-basic.jpeg",
+      "SourceId": "EbookMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\",
+      "BasePath": "_content/EbookMVC",
+      "RelativePath": "images/java-basic#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hhy15j6lqg",
+      "Integrity": "1VUbYum8q+tU0d+Viic6lLbq0tFP5ZZRjX9bH3tgbYc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\java-basic.jpeg"
+    },
+    {
       "Identity": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\js\\adminlte.js",
       "SourceId": "EbookMVC",
       "SourceType": "Discovered",
@@ -1947,6 +2220,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\adminlte.min.js.map"
+    },
+    {
+      "Identity": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\js\\product-search.js",
+      "SourceId": "EbookMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\",
+      "BasePath": "_content/EbookMVC",
+      "RelativePath": "js/product-search#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1akg5apia3",
+      "Integrity": "V5ja2XP1aUqnS/Rld4K7bolsyf4YjW3wGQuG/6UunOE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\product-search.js"
     },
     {
       "Identity": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\js\\site.js",
@@ -6808,6 +7102,990 @@
       ]
     },
     {
+      "Route": "images/37517548-ce8e-495a-88d5-25da9074bce3.jpg",
+      "AssetFile": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\37517548-ce8e-495a-88d5-25da9074bce3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20048"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fCYh77i6zEhByt9NdGkMxgWzIHY5x7JSc3SVtrrITKI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 03:55:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fCYh77i6zEhByt9NdGkMxgWzIHY5x7JSc3SVtrrITKI="
+        }
+      ]
+    },
+    {
+      "Route": "images/37517548-ce8e-495a-88d5-25da9074bce3.wvspwii8u3.jpg",
+      "AssetFile": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\37517548-ce8e-495a-88d5-25da9074bce3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20048"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fCYh77i6zEhByt9NdGkMxgWzIHY5x7JSc3SVtrrITKI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 03:55:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wvspwii8u3"
+        },
+        {
+          "Name": "label",
+          "Value": "images/37517548-ce8e-495a-88d5-25da9074bce3.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fCYh77i6zEhByt9NdGkMxgWzIHY5x7JSc3SVtrrITKI="
+        }
+      ]
+    },
+    {
+      "Route": "images/7a34b2be-be14-4ca8-982f-d0e654c949a1.13tveakxe7.png",
+      "AssetFile": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\7a34b2be-be14-4ca8-982f-d0e654c949a1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "182966"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"A6VqJalfg/O8zIWyoQPP8n2U78qvoMnrmWFSaUVZbrs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 02:48:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "13tveakxe7"
+        },
+        {
+          "Name": "label",
+          "Value": "images/7a34b2be-be14-4ca8-982f-d0e654c949a1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-A6VqJalfg/O8zIWyoQPP8n2U78qvoMnrmWFSaUVZbrs="
+        }
+      ]
+    },
+    {
+      "Route": "images/7a34b2be-be14-4ca8-982f-d0e654c949a1.png",
+      "AssetFile": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\7a34b2be-be14-4ca8-982f-d0e654c949a1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "182966"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"A6VqJalfg/O8zIWyoQPP8n2U78qvoMnrmWFSaUVZbrs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 02:48:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-A6VqJalfg/O8zIWyoQPP8n2U78qvoMnrmWFSaUVZbrs="
+        }
+      ]
+    },
+    {
+      "Route": "images/7de1d075-070b-44bd-8103-d2696083d4f0.hhy15j6lqg.jpeg",
+      "AssetFile": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\7de1d075-070b-44bd-8103-d2696083d4f0.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80228"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1VUbYum8q+tU0d+Viic6lLbq0tFP5ZZRjX9bH3tgbYc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 02:47:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hhy15j6lqg"
+        },
+        {
+          "Name": "label",
+          "Value": "images/7de1d075-070b-44bd-8103-d2696083d4f0.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1VUbYum8q+tU0d+Viic6lLbq0tFP5ZZRjX9bH3tgbYc="
+        }
+      ]
+    },
+    {
+      "Route": "images/7de1d075-070b-44bd-8103-d2696083d4f0.jpeg",
+      "AssetFile": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\7de1d075-070b-44bd-8103-d2696083d4f0.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80228"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1VUbYum8q+tU0d+Viic6lLbq0tFP5ZZRjX9bH3tgbYc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 02:47:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1VUbYum8q+tU0d+Viic6lLbq0tFP5ZZRjX9bH3tgbYc="
+        }
+      ]
+    },
+    {
+      "Route": "images/856b5de5-59c7-43ce-b272-bb6bf70670fd.m0egxjzla3.png",
+      "AssetFile": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\856b5de5-59c7-43ce-b272-bb6bf70670fd.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6133"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9gd0konMC1sw0h+xSTbA6X9En8ER2XgHpDfkxr8IhkI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 03:49:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m0egxjzla3"
+        },
+        {
+          "Name": "label",
+          "Value": "images/856b5de5-59c7-43ce-b272-bb6bf70670fd.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9gd0konMC1sw0h+xSTbA6X9En8ER2XgHpDfkxr8IhkI="
+        }
+      ]
+    },
+    {
+      "Route": "images/856b5de5-59c7-43ce-b272-bb6bf70670fd.png",
+      "AssetFile": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\856b5de5-59c7-43ce-b272-bb6bf70670fd.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6133"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9gd0konMC1sw0h+xSTbA6X9En8ER2XgHpDfkxr8IhkI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 03:49:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9gd0konMC1sw0h+xSTbA6X9En8ER2XgHpDfkxr8IhkI="
+        }
+      ]
+    },
+    {
+      "Route": "images/9c6bcc70-43e3-417b-9ee2-0b359cd0cd3b.ngc6gs2bj4.png",
+      "AssetFile": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\9c6bcc70-43e3-417b-9ee2-0b359cd0cd3b.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "206040"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aZv5ccL9TVbzgDh0KPlF1p67FAb964TQa7p7XVthLl8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 03:43:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ngc6gs2bj4"
+        },
+        {
+          "Name": "label",
+          "Value": "images/9c6bcc70-43e3-417b-9ee2-0b359cd0cd3b.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aZv5ccL9TVbzgDh0KPlF1p67FAb964TQa7p7XVthLl8="
+        }
+      ]
+    },
+    {
+      "Route": "images/9c6bcc70-43e3-417b-9ee2-0b359cd0cd3b.png",
+      "AssetFile": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\9c6bcc70-43e3-417b-9ee2-0b359cd0cd3b.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "206040"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aZv5ccL9TVbzgDh0KPlF1p67FAb964TQa7p7XVthLl8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 03:43:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aZv5ccL9TVbzgDh0KPlF1p67FAb964TQa7p7XVthLl8="
+        }
+      ]
+    },
+    {
+      "Route": "images/azure-chungchi.m0egxjzla3.png",
+      "AssetFile": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\azure-chungchi.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6133"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9gd0konMC1sw0h+xSTbA6X9En8ER2XgHpDfkxr8IhkI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 03:47:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m0egxjzla3"
+        },
+        {
+          "Name": "label",
+          "Value": "images/azure-chungchi.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9gd0konMC1sw0h+xSTbA6X9En8ER2XgHpDfkxr8IhkI="
+        }
+      ]
+    },
+    {
+      "Route": "images/azure-chungchi.png",
+      "AssetFile": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\azure-chungchi.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6133"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9gd0konMC1sw0h+xSTbA6X9En8ER2XgHpDfkxr8IhkI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 03:47:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9gd0konMC1sw0h+xSTbA6X9En8ER2XgHpDfkxr8IhkI="
+        }
+      ]
+    },
+    {
+      "Route": "images/c++-basic.ngc6gs2bj4.png",
+      "AssetFile": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\c++-basic.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "206040"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aZv5ccL9TVbzgDh0KPlF1p67FAb964TQa7p7XVthLl8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 04 Apr 2025 14:12:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ngc6gs2bj4"
+        },
+        {
+          "Name": "label",
+          "Value": "images/c++-basic.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aZv5ccL9TVbzgDh0KPlF1p67FAb964TQa7p7XVthLl8="
+        }
+      ]
+    },
+    {
+      "Route": "images/c++-basic.png",
+      "AssetFile": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\c++-basic.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "206040"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aZv5ccL9TVbzgDh0KPlF1p67FAb964TQa7p7XVthLl8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 04 Apr 2025 14:12:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aZv5ccL9TVbzgDh0KPlF1p67FAb964TQa7p7XVthLl8="
+        }
+      ]
+    },
+    {
+      "Route": "images/c54ec0bb-9fc7-4e77-b56f-1afb4bc05bdb.23e0o8kat5.png",
+      "AssetFile": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\c54ec0bb-9fc7-4e77-b56f-1afb4bc05bdb.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7166"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Tj+5kbPXNJJwRL9TRadXEUM2aqri4uU5G76rdkt/z/8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 02:47:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "23e0o8kat5"
+        },
+        {
+          "Name": "label",
+          "Value": "images/c54ec0bb-9fc7-4e77-b56f-1afb4bc05bdb.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Tj+5kbPXNJJwRL9TRadXEUM2aqri4uU5G76rdkt/z/8="
+        }
+      ]
+    },
+    {
+      "Route": "images/c54ec0bb-9fc7-4e77-b56f-1afb4bc05bdb.png",
+      "AssetFile": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\c54ec0bb-9fc7-4e77-b56f-1afb4bc05bdb.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7166"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Tj+5kbPXNJJwRL9TRadXEUM2aqri4uU5G76rdkt/z/8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 02:47:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Tj+5kbPXNJJwRL9TRadXEUM2aqri4uU5G76rdkt/z/8="
+        }
+      ]
+    },
+    {
+      "Route": "images/d812b570-3514-493c-bb4f-1f894c5ca4d4.hhy15j6lqg.jpeg",
+      "AssetFile": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\d812b570-3514-493c-bb4f-1f894c5ca4d4.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80228"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1VUbYum8q+tU0d+Viic6lLbq0tFP5ZZRjX9bH3tgbYc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 02:49:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hhy15j6lqg"
+        },
+        {
+          "Name": "label",
+          "Value": "images/d812b570-3514-493c-bb4f-1f894c5ca4d4.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1VUbYum8q+tU0d+Viic6lLbq0tFP5ZZRjX9bH3tgbYc="
+        }
+      ]
+    },
+    {
+      "Route": "images/d812b570-3514-493c-bb4f-1f894c5ca4d4.jpeg",
+      "AssetFile": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\d812b570-3514-493c-bb4f-1f894c5ca4d4.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80228"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1VUbYum8q+tU0d+Viic6lLbq0tFP5ZZRjX9bH3tgbYc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 02:49:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1VUbYum8q+tU0d+Viic6lLbq0tFP5ZZRjX9bH3tgbYc="
+        }
+      ]
+    },
+    {
+      "Route": "images/f1a9b814-9400-421b-ac34-7fce3b6bb888.jpg",
+      "AssetFile": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\f1a9b814-9400-421b-ac34-7fce3b6bb888.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20048"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fCYh77i6zEhByt9NdGkMxgWzIHY5x7JSc3SVtrrITKI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 02:48:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fCYh77i6zEhByt9NdGkMxgWzIHY5x7JSc3SVtrrITKI="
+        }
+      ]
+    },
+    {
+      "Route": "images/f1a9b814-9400-421b-ac34-7fce3b6bb888.wvspwii8u3.jpg",
+      "AssetFile": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\f1a9b814-9400-421b-ac34-7fce3b6bb888.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20048"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fCYh77i6zEhByt9NdGkMxgWzIHY5x7JSc3SVtrrITKI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 02:48:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wvspwii8u3"
+        },
+        {
+          "Name": "label",
+          "Value": "images/f1a9b814-9400-421b-ac34-7fce3b6bb888.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fCYh77i6zEhByt9NdGkMxgWzIHY5x7JSc3SVtrrITKI="
+        }
+      ]
+    },
+    {
+      "Route": "images/html-course.jpg",
+      "AssetFile": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\html-course.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20048"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fCYh77i6zEhByt9NdGkMxgWzIHY5x7JSc3SVtrrITKI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 10:45:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fCYh77i6zEhByt9NdGkMxgWzIHY5x7JSc3SVtrrITKI="
+        }
+      ]
+    },
+    {
+      "Route": "images/html-course.wvspwii8u3.jpg",
+      "AssetFile": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\html-course.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20048"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fCYh77i6zEhByt9NdGkMxgWzIHY5x7JSc3SVtrrITKI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 10:45:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wvspwii8u3"
+        },
+        {
+          "Name": "label",
+          "Value": "images/html-course.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fCYh77i6zEhByt9NdGkMxgWzIHY5x7JSc3SVtrrITKI="
+        }
+      ]
+    },
+    {
+      "Route": "images/java-basic.hhy15j6lqg.jpeg",
+      "AssetFile": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\java-basic.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80228"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1VUbYum8q+tU0d+Viic6lLbq0tFP5ZZRjX9bH3tgbYc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 02:30:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hhy15j6lqg"
+        },
+        {
+          "Name": "label",
+          "Value": "images/java-basic.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1VUbYum8q+tU0d+Viic6lLbq0tFP5ZZRjX9bH3tgbYc="
+        }
+      ]
+    },
+    {
+      "Route": "images/java-basic.jpeg",
+      "AssetFile": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\java-basic.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80228"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1VUbYum8q+tU0d+Viic6lLbq0tFP5ZZRjX9bH3tgbYc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 02:30:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1VUbYum8q+tU0d+Viic6lLbq0tFP5ZZRjX9bH3tgbYc="
+        }
+      ]
+    },
+    {
       "Route": "js/adminlte.js",
       "AssetFile": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\obj\\Debug\\net9.0\\compressed\\eirl6uoie6-mwmvnds50w.gz",
       "Selectors": [
@@ -7996,6 +9274,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-hFc9K+roie7uCifCL43jfQ9i87u0H2lfi1Kq4HZbcgE="
+        }
+      ]
+    },
+    {
+      "Route": "js/product-search.1akg5apia3.js",
+      "AssetFile": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\obj\\Debug\\net9.0\\compressed\\hk6pvz9441-1akg5apia3.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000751314801"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1330"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5MhQK058JKNi5r1J/Hw7a0KifaN+xE5pzyJktW9YZpM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 03:27:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"V5ja2XP1aUqnS/Rld4K7bolsyf4YjW3wGQuG/6UunOE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1akg5apia3"
+        },
+        {
+          "Name": "label",
+          "Value": "js/product-search.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-V5ja2XP1aUqnS/Rld4K7bolsyf4YjW3wGQuG/6UunOE="
+        }
+      ]
+    },
+    {
+      "Route": "js/product-search.1akg5apia3.js",
+      "AssetFile": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\js\\product-search.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4317"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V5ja2XP1aUqnS/Rld4K7bolsyf4YjW3wGQuG/6UunOE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 03:27:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1akg5apia3"
+        },
+        {
+          "Name": "label",
+          "Value": "js/product-search.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-V5ja2XP1aUqnS/Rld4K7bolsyf4YjW3wGQuG/6UunOE="
+        }
+      ]
+    },
+    {
+      "Route": "js/product-search.1akg5apia3.js.gz",
+      "AssetFile": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\obj\\Debug\\net9.0\\compressed\\hk6pvz9441-1akg5apia3.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1330"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5MhQK058JKNi5r1J/Hw7a0KifaN+xE5pzyJktW9YZpM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 03:27:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1akg5apia3"
+        },
+        {
+          "Name": "label",
+          "Value": "js/product-search.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5MhQK058JKNi5r1J/Hw7a0KifaN+xE5pzyJktW9YZpM="
+        }
+      ]
+    },
+    {
+      "Route": "js/product-search.js",
+      "AssetFile": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\obj\\Debug\\net9.0\\compressed\\hk6pvz9441-1akg5apia3.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000751314801"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1330"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5MhQK058JKNi5r1J/Hw7a0KifaN+xE5pzyJktW9YZpM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 03:27:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"V5ja2XP1aUqnS/Rld4K7bolsyf4YjW3wGQuG/6UunOE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-V5ja2XP1aUqnS/Rld4K7bolsyf4YjW3wGQuG/6UunOE="
+        }
+      ]
+    },
+    {
+      "Route": "js/product-search.js",
+      "AssetFile": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\js\\product-search.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4317"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V5ja2XP1aUqnS/Rld4K7bolsyf4YjW3wGQuG/6UunOE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 03:27:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-V5ja2XP1aUqnS/Rld4K7bolsyf4YjW3wGQuG/6UunOE="
+        }
+      ]
+    },
+    {
+      "Route": "js/product-search.js.gz",
+      "AssetFile": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\obj\\Debug\\net9.0\\compressed\\hk6pvz9441-1akg5apia3.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1330"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5MhQK058JKNi5r1J/Hw7a0KifaN+xE5pzyJktW9YZpM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 03:27:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5MhQK058JKNi5r1J/Hw7a0KifaN+xE5pzyJktW9YZpM="
         }
       ]
     },

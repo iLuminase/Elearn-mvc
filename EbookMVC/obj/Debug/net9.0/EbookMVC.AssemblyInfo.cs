@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EbookMVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0009fc7b4547ff759a947c890925681ae06962f7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2d03ac97fff7c6ca038cf678ed2f48152d0ed71")]
 [assembly: System.Reflection.AssemblyProductAttribute("EbookMVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EbookMVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -12,5 +12,6 @@ namespace EbookMVC.Models
 
         [Display(Name = "Mô tả")]
         public string Description { get; set; }
+        public List<Product>? Products { get; set; }
     }
 }

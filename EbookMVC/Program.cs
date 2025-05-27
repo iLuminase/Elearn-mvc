@@ -1,4 +1,6 @@
+using EbookMVC.Models;
 using EbookMVC.Repository;
+using Microsoft.EntityFrameworkCore;
 
 // Đảm bảo sử dụng UTF-8 cho toàn bộ ứng dụng
 System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
@@ -12,10 +14,12 @@ builder.Services.AddControllersWithViews()
         options.JsonSerializerOptions.Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping;
     });
 
-// Đăng ký dịch vụ cho các Repository
-builder.Services.AddScoped<IProductRepository, MockProductRepository>();
-builder.Services.AddScoped<ICategoryRepository, MockCategoryRepository>();
-builder.Services.AddScoped<IUserLogRepository, MockUserLogRepository>();
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddScoped<IProductRepository, EFProductRepository>();
+builder.Services.AddScoped<ICategoryRepository, EFCategoryRepository>();
+builder.Services.AddScoped<IUserLogRepository, EFUserLogRepository>();
 
 var app = builder.Build();
 
@@ -28,16 +32,13 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapStaticAssets();
-
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
-    .WithStaticAssets();
-
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

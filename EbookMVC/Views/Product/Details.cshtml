@@ -65,6 +65,18 @@
                                 </dl>
                             </div>
                             <div class="col-md-4">
+                                <!-- Hiển thị hình ảnh khóa học -->
+                                @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                                {
+                                    <div class="card mb-3">
+                                        <div class="card-header bg-info">
+                                            <h3 class="card-title">Hình ảnh khóa học</h3>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <img src="@Model.ImageUrl" alt="@Model.Name" class="img-fluid rounded" style="max-width: 100%; height: auto;" />
+                                        </div>
+                                    </div>
+                                }
                                 <div class="card">
                                     <div class="card-header bg-primary">
                                         <h3 class="card-title">Thao tác</h3>

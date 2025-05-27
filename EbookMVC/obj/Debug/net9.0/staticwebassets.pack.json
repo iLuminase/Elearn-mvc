@@ -45,6 +45,54 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\37517548-ce8e-495a-88d5-25da9074bce3.jpg",
+      "PackagePath": "staticwebassets\\images\\37517548-ce8e-495a-88d5-25da9074bce3.jpg"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\7a34b2be-be14-4ca8-982f-d0e654c949a1.png",
+      "PackagePath": "staticwebassets\\images\\7a34b2be-be14-4ca8-982f-d0e654c949a1.png"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\7de1d075-070b-44bd-8103-d2696083d4f0.jpeg",
+      "PackagePath": "staticwebassets\\images\\7de1d075-070b-44bd-8103-d2696083d4f0.jpeg"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\856b5de5-59c7-43ce-b272-bb6bf70670fd.png",
+      "PackagePath": "staticwebassets\\images\\856b5de5-59c7-43ce-b272-bb6bf70670fd.png"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\9c6bcc70-43e3-417b-9ee2-0b359cd0cd3b.png",
+      "PackagePath": "staticwebassets\\images\\9c6bcc70-43e3-417b-9ee2-0b359cd0cd3b.png"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\azure-chungchi.png",
+      "PackagePath": "staticwebassets\\images\\azure-chungchi.png"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\c++-basic.png",
+      "PackagePath": "staticwebassets\\images\\c++-basic.png"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\c54ec0bb-9fc7-4e77-b56f-1afb4bc05bdb.png",
+      "PackagePath": "staticwebassets\\images\\c54ec0bb-9fc7-4e77-b56f-1afb4bc05bdb.png"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\d812b570-3514-493c-bb4f-1f894c5ca4d4.jpeg",
+      "PackagePath": "staticwebassets\\images\\d812b570-3514-493c-bb4f-1f894c5ca4d4.jpeg"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\f1a9b814-9400-421b-ac34-7fce3b6bb888.jpg",
+      "PackagePath": "staticwebassets\\images\\f1a9b814-9400-421b-ac34-7fce3b6bb888.jpg"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\html-course.jpg",
+      "PackagePath": "staticwebassets\\images\\html-course.jpg"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\images\\java-basic.jpeg",
+      "PackagePath": "staticwebassets\\images\\java-basic.jpeg"
+    },
+    {
       "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\js\\adminlte.js",
       "PackagePath": "staticwebassets\\js\\adminlte.js"
     },
@@ -59,6 +107,10 @@
     {
       "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\js\\adminlte.min.js.map",
       "PackagePath": "staticwebassets\\js\\adminlte.min.js.map"
+    },
+    {
+      "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\js\\product-search.js",
+      "PackagePath": "staticwebassets\\js\\product-search.js"
     },
     {
       "Id": "D:\\myworkspace\\TH LapTrinhWeb\\Buoi2\\EbookMVC\\wwwroot\\js\\site.js",

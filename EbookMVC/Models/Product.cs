@@ -28,5 +28,12 @@ namespace EbookMVC.Models
 
         [Display(Name = "Cấp độ")]
         public string Level { get; set; }
+
+        //Tiep tuc buoi 3
+        public string? ImageUrl { get; set; }
+        public List<ProductImage>? ProductImages { get; set; }
+
+    
     }
+
 }

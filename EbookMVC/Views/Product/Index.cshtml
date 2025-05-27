@@ -42,14 +42,91 @@
                     <!-- /.card-header -->
                     <div class="card-body">
                         <div class="mb-3">
-                            <a asp-action="Create" class="btn btn-primary">
-                                <i class="fas fa-plus"></i> Thêm khóa học mới
-                            </a>
+                            <form asp-action="Index" method="get" class="row">
+                                <div class="col-md-2">
+                                    <input type="text" name="searchName" class="form-control" placeholder="Tên, danh mục, giá bán" />
+                                </div>
+                                <div class="col-md-2">
+                                    <input type="number" name="minPrice" class="form-control" placeholder="Giá tối thiểu" />
+                                </div>
+                                <div class="col-md-2">
+                                    <input type="number" name="maxPrice" class="form-control" placeholder="Giá tối đa" />
+                                </div>
+                                <div class="col-md-2">
+                                    <select name="categoryId" class="form-control">
+                                        <option value="">-- Tất cả danh mục --</option>
+                                        @foreach (var category in ViewBag.Categories)
+                                        {
+                                            <option value="@category.Value">@category.Text</option>
+                                        }
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="fas fa-search"></i> Tìm kiếm
+                                    </button>
+                                    <a asp-action="Index" class="btn btn-secondary">
+                                        <i class="fas fa-redo"></i> Làm mới
+                                    </a>
+                                    <a asp-action="Create" class="btn btn-success">
+                                        <i class="fas fa-plus"></i> Thêm khóa học mới
+                                    </a>
+                                </div>
+                            </form>
                         </div>
+                        <!-- Hiển thị thông báo thành công -->
+                        @if (TempData["SuccessMessage"] != null)
+                        {
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <i class="fas fa-check-circle"></i> @TempData["SuccessMessage"]
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        }
+
+                        <!-- Hiển thị thông báo lỗi -->
+                        @if (TempData["ErrorMessage"] != null)
+                        {
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                <i class="fas fa-exclamation-triangle"></i> @TempData["ErrorMessage"]
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        }
+
+                        <!-- Search Bar -->
+                        <div class="row mb-3">
+                            <div class="col-md-8">
+                                <div class="input-group" style="width: 100%;">
+                                    <input type="text" id="searchInput" class="form-control" placeholder="Tìm kiếm khóa học theo tên, danh mục, giá bán hoặc ID..." value="@ViewBag.SearchKeyword">
+                                    <div class="input-group-append">
+                                        <button type="button" id="searchBtn" class="btn btn-info">
+                                            <i class="fas fa-search"></i> Tìm kiếm
+                                        </button>
+                                        <a asp-action="Search" class="btn btn-secondary">
+                                            <i class="fas fa-filter"></i> Tìm kiếm nâng cao
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Loading indicator -->
+                                <div id="searchLoading" class="text-center mt-2" style="display: none;">
+                                    <i class="fas fa-spinner fa-spin"></i> Đang tìm kiếm...
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-right">
+                                <a asp-action="Create" class="btn btn-primary">
+                                    <i class="fas fa-plus"></i> Thêm khóa học mới
+                                </a>
+                            </div>
+                        </div>
+
                         <table class="table table-bordered table-striped">
                             <thead>
                                 <tr>
                                     <th style="width: 10px">#</th>
+                                    <th style="width: 80px">Hình ảnh</th>
                                     <th>Tên khóa học</th>
                                     <th>Giá</th>
                                     <th>Danh mục</th>
@@ -63,6 +140,18 @@
                                     {
                                         <tr>
                                             <td>@item.Id</td>
+                                            <td>
+                                                @if (!string.IsNullOrEmpty(item.ImageUrl))
+                                                {
+                                                    <img src="@item.ImageUrl" alt="@item.Name" style="width: 60px; height: 60px; object-fit: cover;" class="img-thumbnail" />
+                                                }
+                                                else
+                                                {
+                                                    <div class="bg-light d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                                        <i class="fas fa-image text-muted"></i>
+                                                    </div>
+                                                }
+                                            </td>
                                             <td>@item.Name</td>
                                             <td>@item.Price.ToString("N0") VNĐ</td>
                                             <td>@item.Category?.Name</td>
@@ -85,7 +174,7 @@
                                 else
                                 {
                                     <tr>
-                                        <td colspan="5" class="text-center">Không có dữ liệu</td>
+                                        <td colspan="6" class="text-center">Không có dữ liệu</td>
                                     </tr>
                                 }
                             </tbody>
@@ -111,3 +200,122 @@
     <!-- /.container-fluid -->
 </section>
 <!-- /.content -->
+
+@section Scripts {
+    <script src="~/js/product-search.js"></script>
+}
+
+<script>
+$(document).ready(function() {
+    let searchTimeout;
+    const searchInput = $('#searchInput');
+    const searchBtn = $('#searchBtn');
+    const searchLoading = $('#searchLoading');
+    const tableBody = $('table tbody');
+
+    // Tìm kiếm real-time khi người dùng nhập
+    searchInput.on('input', function() {
+        clearTimeout(searchTimeout);
+        const keyword = $(this).val().trim();
+
+        // Debounce để tránh gọi API quá nhiều
+        searchTimeout = setTimeout(function() {
+            if (keyword.length > 0) {
+                performSearch(keyword);
+            } else {
+                // Nếu không có từ khóa, reload trang để hiển thị tất cả sản phẩm
+                window.location.href = '@Url.Action("Index", "Product")';
+            }
+        }, 300); // Đợi 300ms sau khi người dùng ngừng nhập
+    });
+
+    // Xử lý phím Enter
+    searchInput.on('keypress', function(e) {
+        if (e.which === 13) { // Enter key
+            e.preventDefault();
+            const keyword = $(this).val().trim();
+            if (keyword.length > 0) {
+                performSearch(keyword);
+            }
+        }
+    });
+
+    // Xử lý click nút tìm kiếm
+    searchBtn.on('click', function() {
+        const keyword = searchInput.val().trim();
+        if (keyword.length > 0) {
+            performSearch(keyword);
+        } else {
+            // Nếu không có từ khóa, hiển thị tất cả sản phẩm
+            window.location.href = '@Url.Action("Index", "Product")';
+        }
+    });
+
+    // Hàm thực hiện tìm kiếm
+    function performSearch(keyword) {
+        searchLoading.show();
+
+        $.ajax({
+            url: '/api/ProductApi/search',
+            type: 'GET',
+            data: { keyword: keyword },
+            success: function(response) {
+                searchLoading.hide();
+                if (response.success) {
+                    updateTable(response.data);
+                } else {
+                    updateTable([]);
+                }
+            },
+            error: function() {
+                searchLoading.hide();
+                alert('Có lỗi xảy ra khi tìm kiếm. Vui lòng thử lại.');
+            }
+        });
+    }
+
+    // Hàm cập nhật bảng kết quả
+    function updateTable(products) {
+        tableBody.empty();
+
+        if (products.length === 0) {
+            tableBody.append(`
+                <tr>
+                    <td colspan="6" class="text-center">Không tìm thấy khóa học nào phù hợp</td>
+                </tr>
+            `);
+        } else {
+            products.forEach(function(product) {
+                const imageHtml = product.imageUrl ?
+                    `<img src="${product.imageUrl}" alt="${product.name}" style="width: 60px; height: 60px; object-fit: cover;" class="img-thumbnail" />` :
+                    `<div class="bg-light d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                        <i class="fas fa-image text-muted"></i>
+                    </div>`;
+
+                tableBody.append(`
+                    <tr>
+                        <td>${product.id}</td>
+                        <td>${imageHtml}</td>
+                        <td>${product.name}</td>
+                        <td>${product.price}</td>
+                        <td>${product.categoryName}</td>
+                        <td>
+                            <div class="btn-group">
+                                <a href="/Product/Details/${product.id}" class="btn btn-info btn-sm" title="Xem chi tiết">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="/Product/Edit/${product.id}" class="btn btn-warning btn-sm" title="Chỉnh sửa">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                <a href="/Product/Delete/${product.id}" class="btn btn-danger btn-sm" title="Xóa">
+                                    <i class="fas fa-trash"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                `);
+            });
+        }
+    }
+});
+</script>
