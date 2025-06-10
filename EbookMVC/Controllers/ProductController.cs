@@ -6,9 +6,12 @@ using System;
 using System.Threading.Tasks;
 using System.IO;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
+using EbookMVC.Areas.Admin.Models;
 
 namespace EbookMVC.Controllers
 {
+    [Authorize(Roles = SD.Role_Admin)]
     public class ProductController : Controller
     {
         private readonly IProductRepository _productRepository;

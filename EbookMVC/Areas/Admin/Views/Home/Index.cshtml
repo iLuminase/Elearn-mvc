@@ -1,0 +1,495 @@
+﻿@model EbookMVC.Models.DashboardViewModel
+
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<!-- Content Header (Page header) -->
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0">Dashboard</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="/Admin/Home">Home</a></li>
+                    <li class="breadcrumb-item active">Dashboard</li>
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+
+<!-- Thông báo -->
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <i class="fas fa-check-circle"></i> @TempData["SuccessMessage"]
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <i class="fas fa-exclamation-circle"></i> @TempData["ErrorMessage"]
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <!-- Info boxes -->
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="info-box">
+                    <span class="info-box-icon bg-info elevation-1"><i class="fas fa-book"></i></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">Khóa học</span>
+                        <span class="info-box-number">@(Model?.TotalProducts ?? 0)</span>
+                    </div>
+                    <!-- /.info-box-content -->
+                </div>
+                <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="info-box mb-3">
+                    <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-list"></i></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">Danh mục</span>
+                        <span class="info-box-number">@(Model?.TotalCategories ?? 0)</span>
+                    </div>
+                    <!-- /.info-box-content -->
+                </div>
+                <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+
+            <!-- fix for small devices only -->
+            <div class="clearfix hidden-md-up"></div>
+
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="info-box mb-3">
+                    <span class="info-box-icon bg-success elevation-1"><i class="fas fa-money-bill"></i></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">Doanh thu</span>
+                        <span class="info-box-number">@((Model?.TotalRevenue ?? 0).ToString("N0")) VNĐ</span>
+                    </div>
+                    <!-- /.info-box-content -->
+                </div>
+                <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="info-box mb-3">
+                    <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-users"></i></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">Người dùng</span>
+                        <span class="info-box-number">@(Model?.TotalUsers ?? 0)</span>
+                    </div>
+                    <!-- /.info-box-content -->
+                </div>
+                <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+        <!-- Test Email Section -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-info">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="fas fa-envelope"></i> Test Email System
+                        </h3>
+                        <div class="card-tools">
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>Kiểm tra chức năng gửi email của hệ thống (dùng cho reset password):</p>
+                                <form id="testEmailForm" method="get" action="@Url.Action("TestEmail", "Home")">
+                                    <div class="input-group">
+                                        <input type="email" name="email" class="form-control" placeholder="Nhập email để test..." value="test@example.com" required>
+                                        <div class="input-group-append">
+                                            <button type="submit" class="btn btn-info">
+                                                <i class="fas fa-paper-plane"></i> Gửi Test Email
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="alert alert-info">
+                                    <h5><i class="icon fas fa-info"></i> Lưu ý:</h5>
+                                    Email sẽ được gửi qua Gmail SMTP. Kiểm tra cả hộp thư spam nếu không thấy email.
+                                </div>
+                                <div class="mt-2">
+                                    <a href="@Url.Action("ConfirmUserEmail", "Home", new { email = "tienphat3968@gmail.com" })" class="btn btn-warning btn-sm">
+                                        <i class="fas fa-check-circle"></i> Confirm Email Test User
+                                    </a>
+                                    <a href="@Url.Action("TestResetPasswordUrl", "Home")" class="btn btn-primary btn-sm ml-2">
+                                        <i class="fas fa-link"></i> Test Reset Password URL
+                                    </a>
+                                    <small class="text-muted d-block mt-1">Cần confirm email trước khi test forgot password</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Test URL Generation Results -->
+        @if (ViewBag.TestResults != null)
+        {
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card card-success">
+                        <div class="card-header">
+                            <h3 class="card-title">
+                                <i class="fas fa-link"></i> Kết quả Test URL Generation
+                            </h3>
+                            <div class="card-tools">
+                                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Thông tin URL:</h5>
+                                    <table class="table table-bordered">
+                                        <tr>
+                                            <td><strong>Protocol hiện tại:</strong></td>
+                                            <td><span class="badge @(ViewBag.TestResults.Protocol == "HTTPS" ? "bg-success" : "bg-warning")">@ViewBag.TestResults.Protocol</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>URL hiện tại:</strong></td>
+                                            <td><code>@ViewBag.TestResults.CurrentUrl</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Reset Password URL:</strong></td>
+                                            <td><code style="word-break: break-all;">@ViewBag.TestResults.CallbackUrl</code></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Chi tiết Code:</h5>
+                                    <table class="table table-bordered">
+                                        <tr>
+                                            <td><strong>Original Code:</strong></td>
+                                            <td><code>@ViewBag.TestResults.OriginalCode</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Encoded Code:</strong></td>
+                                            <td><code style="word-break: break-all;">@ViewBag.TestResults.EncodedCode</code></td>
+                                        </tr>
+                                    </table>
+
+                                    <h5>Email Content:</h5>
+                                    <div class="alert alert-info">
+                                        @Html.Raw(ViewBag.TestResults.EmailContent)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+        <div class="row">
+            <div class="col-md-6">
+                <!-- DONUT CHART -->
+                <div class="card card-danger">
+                    <div class="card-header">
+                        <h3 class="card-title">Khóa học theo danh mục</h3>
+                        <div class="card-tools">
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <button type="button" class="btn btn-tool" data-card-widget="remove">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="donutChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col (LEFT) -->
+            <div class="col-md-6">
+                <!-- BAR CHART -->
+                <div class="card card-success">
+                    <div class="card-header">
+                        <h3 class="card-title">Thống kê hoạt động</h3>
+                        <div class="card-tools">
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <button type="button" class="btn btn-tool" data-card-widget="remove">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="barChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col (RIGHT) -->
+        </div>
+        <!-- /.row -->
+
+        <!-- Recent Activities -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Hoạt động gần đây</h3>
+                        <div class="card-tools">
+                            <a href="/Admin/Home/UserLogs" class="btn btn-tool">
+                                <i class="fas fa-list"></i> Xem tất cả
+                            </a>
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <button type="button" class="btn btn-tool" data-card-widget="remove">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body p-0">
+                        <div class="table-responsive">
+                            <table class="table m-0">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Hành động</th>
+                                        <th>Đối tượng</th>
+                                        <th>Mô tả</th>
+                                        <th>Người dùng</th>
+                                        <th>Thời gian</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @if (Model?.RecentActivities != null)
+                                    {
+                                        @foreach (var log in Model.RecentActivities)
+                                        {
+                                        <tr>
+                                            <td>@log.Id</td>
+                                            <td>
+                                                @if (log.Action == "CREATE")
+                                                {
+                                                    <span class="badge bg-success">Tạo mới</span>
+                                                }
+                                                else if (log.Action == "UPDATE")
+                                                {
+                                                    <span class="badge bg-warning">Cập nhật</span>
+                                                }
+                                                else if (log.Action == "DELETE")
+                                                {
+                                                    <span class="badge bg-danger">Xóa</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="badge bg-info">@log.Action</span>
+                                                }
+                                            </td>
+                                            <td>@log.EntityName</td>
+                                            <td>@log.Description</td>
+                                            <td>@log.UserName</td>
+                                            <td>@log.Timestamp.ToString("dd/MM/yyyy HH:mm")</td>
+                                        </tr>
+                                        }
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.table-responsive -->
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+</section>
+<!-- /.content -->
+
+@section Scripts {
+    <!-- ChartJS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Dữ liệu cho biểu đồ tròn (Khóa học theo danh mục)
+        var donutChartCanvas = document.getElementById('donutChart').getContext('2d');
+        var donutData = {
+            labels: [
+                @if (Model?.ProductsByCategory != null)
+                {
+                    @foreach (var item in Model.ProductsByCategory)
+                    {
+                        <text>'@Html.Raw(item.Key)', </text>
+                    }
+                }
+            ],
+            datasets: [
+                {
+                    data: [
+                        @if (Model?.ProductsByCategory != null)
+                        {
+                            @foreach (var item in Model.ProductsByCategory)
+                            {
+                                <text>@item.Value, </text>
+                            }
+                        }
+                    ],
+                    backgroundColor: ['#f56954', '#00a65a', '#f39c12', '#00c0ef', '#3c8dbc', '#d2d6de'],
+                }
+            ]
+        };
+        var donutOptions = {
+            maintainAspectRatio: false,
+            responsive: true,
+            plugins: {
+                legend: {
+                    labels: {
+                        color: '#000', // Màu đen cho văn bản
+                        font: {
+                            size: 12,
+                            weight: 'bold'
+                        }
+                    },
+                    position: 'right'
+                },
+                tooltip: {
+                    bodyFont: {
+                        size: 14
+                    },
+                    titleFont: {
+                        size: 16
+                    }
+                }
+            }
+        };
+        new Chart(donutChartCanvas, {
+            type: 'doughnut',
+            data: donutData,
+            options: donutOptions
+        });
+
+        // Dữ liệu cho biểu đồ cột (Thống kê hoạt động)
+        var barChartCanvas = document.getElementById('barChart').getContext('2d');
+        var barData = {
+            labels: [
+                @if (Model?.ActionCounts != null)
+                {
+                    @foreach (var item in Model.ActionCounts)
+                    {
+                        <text>'@Html.Raw(item.Key)', </text>
+                    }
+                }
+            ],
+            datasets: [
+                {
+                    label: 'Số lượng',
+                    backgroundColor: 'rgba(60,141,188,0.9)',
+                    borderColor: 'rgba(60,141,188,0.8)',
+                    pointRadius: false,
+                    pointColor: '#3b8bba',
+                    pointStrokeColor: 'rgba(60,141,188,1)',
+                    pointHighlightFill: '#fff',
+                    pointHighlightStroke: 'rgba(60,141,188,1)',
+                    data: [
+                        @if (Model?.ActionCounts != null)
+                        {
+                            @foreach (var item in Model.ActionCounts)
+                            {
+                                <text>@item.Value, </text>
+                            }
+                        }
+                    ]
+                }
+            ]
+        };
+        var barOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        color: '#000', // Màu đen cho văn bản
+                        font: {
+                            weight: 'bold'
+                        }
+                    },
+                    grid: {
+                        color: 'rgba(0, 0, 0, 0.1)'
+                    }
+                },
+                x: {
+                    ticks: {
+                        color: '#000', // Màu đen cho văn bản
+                        font: {
+                            weight: 'bold'
+                        }
+                    },
+                    grid: {
+                        color: 'rgba(0, 0, 0, 0.1)'
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                    labels: {
+                        color: '#000', // Màu đen cho văn bản
+                        font: {
+                            size: 12,
+                            weight: 'bold'
+                        }
+                    }
+                },
+                tooltip: {
+                    bodyFont: {
+                        size: 14
+                    },
+                    titleFont: {
+                        size: 16
+                    }
+                }
+            }
+        };
+        new Chart(barChartCanvas, {
+            type: 'bar',
+            data: barData,
+            options: barOptions
+        });
+    </script>
+}

@@ -1,0 +1,66 @@
+@{
+    ViewData["Title"] = "Truy cập bị từ chối";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+
+<div class="login-box">
+    <div class="card card-outline card-danger">
+        <div class="card-header text-center">
+            <a href="/" class="h1"><b>Elearn</b> Admin</a>
+        </div>
+        <div class="card-body">
+            <div class="text-center mb-4">
+                <i class="fas fa-ban fa-5x text-danger"></i>
+            </div>
+            <h4 class="text-center text-danger mb-4">Truy cập bị từ chối</h4>
+            <p class="text-center mb-4">
+                Bạn không có quyền truy cập vào trang Admin.
+                <br>Vui lòng đăng nhập bằng tài khoản có quyền Admin.
+            </p>
+
+            <div class="text-center">
+                <div class="btn-group-vertical w-100">
+                    <!-- Nút Logout -->
+                    <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/", new { area = "" })" method="post" class="mb-2">
+                        <button type="submit" class="btn btn-danger btn-block">
+                            <i class="fas fa-sign-out-alt"></i> Đăng xuất
+                        </button>
+                    </form>
+
+                    <!-- Nút đăng nhập lại -->
+                    <a href="/Identity/Account/Login" class="btn btn-primary btn-block mb-2">
+                        <i class="fas fa-sign-in-alt"></i> Đăng nhập lại
+                    </a>
+
+                    <!-- Nút về trang chủ -->
+                    <a href="/" class="btn btn-secondary btn-block">
+                        <i class="fas fa-home"></i> Về trang chủ
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-4 text-center">
+                <small class="text-muted">
+                    Nếu bạn cho rằng đây là lỗi, vui lòng liên hệ với quản trị viên.
+                </small>
+            </div>
+        </div>
+        <!-- /.card-body -->
+    </div>
+    <!-- /.card -->
+</div>
+<!-- /.login-box -->
+
+@section Scripts {
+    <script>
+        // Auto focus vào nút đăng xuất sau 1 giây
+        setTimeout(function() {
+            $('button[type="submit"]').focus();
+        }, 1000);
+
+        // Hiệu ứng shake cho icon
+        setTimeout(function() {
+            $('.fa-ban').addClass('animated shake');
+        }, 500);
+    </script>
+}
